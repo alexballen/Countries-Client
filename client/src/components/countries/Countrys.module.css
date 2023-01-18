@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.headcontainer {
+  background-color: lightgreen;
+}
+
+.input {
+  width: 100px;
+  border: 1px;
+  outline: none;
+  border: 1px solid black;
+}
+
+.barraNav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
+.titleDiv {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-delay: 0.3s;
+}
+
+@keyframes example {
+  0% {
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    left: 100px;
+    top: 0px;
+  }
+  50% {
+    left: 150px;
+    top: 30px;
+  }
+  75% {
+    left: 0px;
+    top: 30px;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
+}
+
+.barraNav h1 {
+  font-size: 4vw;
+  color: #ff6961;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black,
+    0 0 25px #251f1f, 0 0 5px #251f1f;
+}
+
+.barraNav button {
+  /* background: white;
+  border: 1px solid black;
+  padding: 2px; */
+  /* margin-right: 15px; */
+}
+
+.buttonLink {
+  background: #251f1f;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  background-color: #251f1f;
+  padding: 2px;
+  color: #ff6961;
+  font-family: "Tahoma", "Geneva", "Verdana", "sans-serif";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: fixed; */
+}
+
+.filtros {
+  background: #251f1f;
+  min-width: 200px;
+  max-width: 470px;
+}
+
+.containerDos {
+  /* max-width: 80%;
+  margin: 0 auto;
+  column-count: 3;
+  column-width: 250px; */
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  align-content: space-around;
+  flex-shrink: 3;
+  background-color: #fdf5e6;
+}
+
+.buttonPage1 {
+  width: 25px;
+  height: 25px;
+}
+
+.buttonPage2 {
+  width: 25px;
+  height: 25px;
+  margin: 4px;
+}
+
+.link2 {
+  text-decoration: none;
+}
+
+.link2:hover {
+  transition: all 0.5s ease-in-out;
+  filter: saturate(180%);
+}
+
+@media screen and (min-width: 480px) {
+  .headcontainer {
+    background-color: lightgreen;
+  }
+}
+
+.loadingCountries {
+  margin-top: 10%;
+}
