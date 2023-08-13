@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 import store from "./redux/store/index.js";
 import axios from "axios";
 
-axios.defaults.baseURL = "https://countryapp-t6r9.onrender.com";
+axios.defaults.baseURL = "https://countries-2mpm.onrender.com";
 
 ReactDOM.render(
   <Provider store={store}>
